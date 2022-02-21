@@ -9,10 +9,10 @@ const outputBox = document.querySelector("#output-box");
 
 function compareValues(sumOfDigits, luckyNumber) {
     if (sumOfDigits % luckyNumber === 0) {
-        outputBox.innerText = "Your Birthday is lucky ✔";
+        outputBox.innerText = "Your Birthday is lucky 💖";
     } else {
  
-        outputBox.innerText = "Your Birthday  is not lucky 🤔";
+        outputBox.innerText = "Your Birthday  is not lucky 🐱‍🚀";
     }
 }
 
@@ -20,8 +20,11 @@ function checkBirthdayIsLucky() {
     const dob = dateOfBirth.value;
     const sumOfDigits = calculateSum(dob);
     //console.log(sum);
+    
 
-    compareValues(sumOfDigits, luckyNumber.value)
+    compareValues(sumOfDigits, luckyNumber.value);
+     
+    //outputBox.innerText = "Please enter both the fields. Leaving one field empty will not produce results.😣";
 
 
 }

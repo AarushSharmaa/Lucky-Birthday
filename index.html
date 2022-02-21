@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,38 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Is your birthday lucky?</h1>
 
-    <div class = "container">
-        <label for = "date-of-birth">Date of Birth: </label>
-        <input type = "date" id = "date-of-birth">
+    <div class="container">
+        <p class = "information">Enter your <strong>Date of Birth and your Lucky Number</strong>
+             and find out if your <strong>birth date is lucky or not</strong>.</p>
+        <label for="date-of-birth">Date of Birth: </label>
+        <input type="date" id="date-of-birth" class = "dob-box">
 
-        <label for = "lucky-number">Lucky Number: </label>
-        <input type ="number" id = "lucky-number">
+    
 
-        <button id = "check-number">Check Number</button>
+        <label for="lucky-number">Lucky Number: </label>
+        <input type="number" id="lucky-number">
 
-        <div id = "output-box"></div> 
+
+
+        <button id="check-number">Find Out</button>
+
+        <div id="output-box"></div>
+
+
+
+    <footer class = "social-media">
+        <p>Made by <a href = "https://aarushportfolio.netlify.app/" target = "_blank">Aarush Sharma.</a></p>
+        <p>Just for fun. 💖</p>
+        
+    </footer>
     </div>
+
+
     <script src="app.js"></script>
 </body>
+
 </html>
