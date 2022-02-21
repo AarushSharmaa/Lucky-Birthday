@@ -8,4 +8,8 @@
 
 HTML, CSS and Javascript 
 
-## 
+## Logic 
+
+- If the sum of digits of Date of Birth is perfectly divisible by Lucky Number, we say it is Lucky.
+- Else, we say it is Unlucky.
+
