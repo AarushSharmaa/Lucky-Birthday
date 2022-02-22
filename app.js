@@ -1,5 +1,6 @@
 //let us take inputs from html world to our js using querySelectors
 
+
 const dateOfBirth = document.querySelector("#date-of-birth");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkNumber = document.querySelector("#check-number");

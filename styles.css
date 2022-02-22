@@ -1,6 +1,6 @@
 body{
     margin-top: 10rem;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
 }
 
 
@@ -34,6 +34,8 @@ h1{
     padding: 0.5rem 2rem;
     margin: 1rem auto;
     font-size: large;
+    background-color: white;
+    border: none;
 
 }
 
@@ -43,6 +45,8 @@ h1{
     padding: 0.5rem 0.5rem;
     margin: 1rem auto;
     font-size: large;
+    background-color: white;
+    border: none;
     
 
 }
@@ -69,4 +73,12 @@ h1{
     margin: 1rem auto;
     font-style: italic;
     font-weight: bolder;
+}
+
+.alert{
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: red;
 }
