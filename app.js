@@ -9,22 +9,33 @@ const outputBox = document.querySelector("#output-box");
 
 
 function compareValues(sumOfDigits, luckyNumber) {
+    if (luckyNumber < 0) {
+        alert("Please enter positive value");
+    }
+
+    if (String(luckyNumber) === "") {
+        alert("Please enter lucky number. This field cannot be empty.");
+    }
+
     if (sumOfDigits % luckyNumber === 0) {
         outputBox.innerText = "Your Birthday is lucky 💖";
     } else {
- 
+
         outputBox.innerText = "Your Birthday  is not lucky 🐱‍🚀";
     }
 }
 
 function checkBirthdayIsLucky() {
     const dob = dateOfBirth.value;
+    if (dob === "") {
+        alert("Please enter your DOB");
+    }
     const sumOfDigits = calculateSum(dob);
     //console.log(sum);
-    
+
 
     compareValues(sumOfDigits, luckyNumber.value);
-     
+
     //outputBox.innerText = "Please enter both the fields. Leaving one field empty will not produce results.😣";
 
 
