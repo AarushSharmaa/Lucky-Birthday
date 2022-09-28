@@ -1,10 +1,9 @@
-body{
+body {
     margin-top: 10rem;
     background-color: whitesmoke;
 }
 
-
-h1{
+h1 {
     text-align: center;
     font-weight: bolder;
     color: #7c3aed;
@@ -12,12 +11,12 @@ h1{
     margin: auto;
 }
 
-
-.information{
+.information {
     color: black;
     font-weight: lighter;
     margin: 2rem auto;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -26,29 +25,24 @@ h1{
     font-weight: bolder;
     width: 100%;
     max-width: 100%;
-
 }
 
-#date-of-birth{
+#date-of-birth {
     border-radius: 0.5rem;
     padding: 0.5rem 2rem;
     margin: 1rem auto;
     font-size: large;
     background-color: white;
     border: none;
-
 }
 
-
-#lucky-number{
+#lucky-number {
     border-radius: 0.5rem;
     padding: 0.5rem 0.5rem;
     margin: 1rem auto;
     font-size: large;
     background-color: white;
     border: none;
-    
-
 }
 
 #check-number {
@@ -75,10 +69,10 @@ h1{
     font-weight: bolder;
 }
 
-.alert{
+.alert {
     font-style: normal;
     font-weight: bold;
     text-align: center;
     display: block;
-    color: red;
+    color: black;
 }

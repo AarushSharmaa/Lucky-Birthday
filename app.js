@@ -9,18 +9,21 @@ const outputBox = document.querySelector("#output-box");
 
 
 function compareValues(sumOfDigits, luckyNumber) {
-    if (luckyNumber < 0) {
-        alert("Please enter positive value");
+    if (luckyNumber <= 0) {
+        outputBox.innerText = "Please enter positive value for Lucky Number. It must be > 0";
+        return;
     }
 
     if (String(luckyNumber) === "") {
-        alert("Please enter lucky number. This field cannot be empty.");
+        outputBox.innerText = "Please enter lucky number. This field cannot be empty.";
+        return;
     }
 
     if (sumOfDigits % luckyNumber === 0) {
+        document.body.style.backgroundColor = "orange";
         outputBox.innerText = "Your Birthday is lucky 💖";
     } else {
-
+        document.body.style.backgroundColor = "red";
         outputBox.innerText = "Your Birthday  is not lucky 🐱‍🚀";
     }
 }
@@ -28,7 +31,8 @@ function compareValues(sumOfDigits, luckyNumber) {
 function checkBirthdayIsLucky() {
     const dob = dateOfBirth.value;
     if (dob === "") {
-        alert("Please enter your DOB");
+        outputBox.innerText = "Please enter your date of birth. This field cannot be empty.";
+        return;
     }
     const sumOfDigits = calculateSum(dob);
     //console.log(sum);
